@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>To-Do List Interactive</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="theme-toggle-container">
+        <button id="theme-toggle" aria-label="Changer thème">🌙</button>
+    </div>
+
+    <div class="container">
+        <div class="title">
+            <h2>To-Do List</h2>
+            <img src="image/task-list_8028200.png" alt="Liste de tâches" />
+        </div>
+        <form id="todo-form">
+            <input type="text" id="task" placeholder="Ajouter une tâche..." autocomplete="off" />
+            <button id="btn" type="submit">Ajouter</button>
+        </form>
+
+        <ul class="list" id="todo-list"></ul>
+
+        <button id="clear-completed" class="clear-btn">Supprimer tâches terminées</button>
+    </div>
+
+    <script src="App.js"></script>
+</body>
+
+</html>
